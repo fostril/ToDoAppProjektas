@@ -1,10 +1,3 @@
-//  ViewController.swift
-//  Todoey
-//
-//  Created by Philipp Muellauer on 26/11/2019.
-//  Copyright © 2019 Philipp Muellauer. All rights reserved.
-//
-
 import UIKit
 import RealmSwift
 import ChameleonFramework
@@ -33,8 +26,6 @@ class TodoListViewController: SwipeTableViewController {
             guard let navBar = navigationController?.navigationBar else { fatalError("Navigation controller does not exist.")
             }
             if let navBarColour = UIColor(hexString: colourHex) {
-                //Original setting: navBar.barTintColor = UIColor(hexString: colourHex)
-                //Revised for iOS13 w/ Prefer Large Titles setting:
                 navBar.backgroundColor = navBarColour
                 navBar.tintColor = ContrastColorOf(navBarColour, returnFlat: true)
                 searchBar.barTintColor = navBarColour
@@ -145,7 +136,4 @@ extension TodoListViewController: UISearchBarDelegate{
             }
         }
     }
-    
-    
-    
 }
