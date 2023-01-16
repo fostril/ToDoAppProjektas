@@ -10,7 +10,7 @@ PODS:
   - SwipeCellKit (2.7.1)
 
 DEPENDENCIES:
-  - ChameleonFramework/Swift (from `https://github.com/wowansm/Chameleon.git`, branch `swift5`)
+  - ChameleonFramework/Swift (from `https://github.com/ViccAlexander/Chameleon.git`)
   - RealmSwift
   - SwipeCellKit
 
